@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Pricing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body{      
+        font-family: 'Sono', sans-serif;
+        background: radial-gradient(827px at 47.3% 48%, rgb(255, 255, 255) 0%, rgb(138, 192, 216) 90%);
+
+    }
+    .pricing-container
+    {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height:90vh;
+        gap:3rem;
+    }
+    .pricing-plan
+    {
+      border: 2px groove grey;
+        background: linear-gradient(#2980B9,#6DD5FA,#abe6fc);
+        flex:1;
+        text-align: center;
+        padding:40px 20px;
+        max-width: 250Px;
+        border-radius: 5px;
+        height: 275px;
+    }
+    .fir{--col:#87ceeb;}
+    .sec{--col:greenyellow;}
+    .thi{--col:lightcoral;}
+
+    .pricing-plan:hover 
+    {
+        background: none;
+        border:1px solid white;
+        border-color: var(--col);
+        background-color: #2b1d4180;
+        box-shadow: 0 0 32px #171717;
+        transform: translateY(-16px) scale(1.02);
+        transition: all 0.5s ease;
+ }
+    .plan-title
+    {
+        background:aliceblue;
+        border: 2px groove black;
+        display:inline-block;
+        padding:5px;
+        margin-bottom: 25px;
+        border-radius: 5px;
+        font-size: 1.6rem;
+        font-weight:950;
+        color: blue;
+        text-shadow: 0.5px 0.5px 1px aqua;
+        
+    }
+    .plan-price
+    {
+        font-size: 1.7rem;
+        color:white;
+        text-shadow: 0px 4px 4px black;
+        font-weight:bold;
+        margin-bottom: 25px;
+    }
+    .plan-features
+    {
+        background-color:#FFFFFF;
+        border-radius: 5px;
+        border:1px dashed black;
+        list-style: none;
+        text-align: left;
+        padding:10px 0px 10px 5px ;
+        font-weight:bold;
+        margin-bottom: 40px;
+    }
+    .plan-button
+    {
+        color: blue;
+        font-weight: 900;
+        border-radius: 10px;
+        border-width: 1.9px;
+        padding:5px;
+    }
+    .plan-button:hover
+    {
+        color: white;
+        background-color: blue;
+        box-shadow: inset 0px 1px 5px #2980B9, 2px 2px 10px #6DD5FA;
+        transform: translateY(-10px) translateX(-1px) scale(1.1);
+        text-shadow: 0px 0px 25px #FFA3FD;
+    }
+    .plan-button:focus
+    {
+        transform: translateY(3px) translateX(3px);
+        transition: all 400ms;
+        transform: scale(0.9);
+        color: black;
+        background-color: skyblue;
+    }
+    footer
+    {
+        text-align: center;
+        background-color: rgb(196, 32, 196);
+        border-radius:50%;
+        width: 50%;
+        margin-left: 25%;
+        margin-bottom: 20px;
+        font-weight: 900;
+        color :white;
+    }
+    footer:hover{transform: scale(1.2);}
+    ::selection
+    {
+        background-color: yellowgreen;
+        color: white;
+    }
+    ::-webkit-scrollbar{width:3vh;}
+    ::-webkit-scrollbar-track
+    {
+        box-shadow: inset 0Px 0Px 10px blue; 
+        border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb
+    {
+        background: hsl(250, 100%, 13%);
+        border-radius: 50%;
+    }
+    ::-webkit-scrollbar-thumb:hover
+    {
+        background: rgb(25, 0, 255);
+    }
+
+
+    @media(max-width:1250px)
+    {
+        .pricing-container
+      {
+        flex-direction:column;
+        height:100%;
+      }
+      .pricing-plan
+      {
+        width: 400px;
+      }
+      footer
+      {
+        margin-top: 20px;
+      }
+
+    }
+    
+
+
+
+  </style>
+</head>
+<body>
+    <div  class="pricing-container">
+        <div class="pricing-plan fir">
+            <div class="plan-title">Basic</div>
+            <div class="plan-price">₹9.99/month</div>
+            <ul class="plan-features">
+                <li>✅ 10GB Storage</li>
+                <li>✅ 1 User</li>
+                <li>🚫 Support</li>
+            </ul>
+             <button class="plan-button">Sign Up</a>
+        </div>
+        <div class="pricing-plan sec">
+            <div class="plan-title">Standard</div>
+            <div class="plan-price">₹19.99/month</div>
+            <ul class="plan-features">
+              <li>✅ 50GB Storage</li>
+              <li>✅ 5 Users</li>
+              <li>✅ Phone &amp; Email Support</li>
+            </ul>
+            <button class="plan-button">Sign Up</a>
+          </div>
+          <div class="pricing-plan thi">
+            <div class="plan-title">Premium</div>
+            <div class="plan-price">₹49.99/month</div>
+            <ul class="plan-features">
+              <li>✅ 100GB Storage</li>
+              <li>✅ 10 Users</li>
+              <li>✅ 24/7 Support</li>
+            </ul>
+            <button class="plan-button">Sign Up</a>
+          </div>
+
+    </div>
+    <footer>Created by Chebrolu Akash</footer>
+</body>
+</html>
